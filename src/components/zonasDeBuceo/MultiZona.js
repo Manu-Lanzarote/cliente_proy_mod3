@@ -1,25 +1,17 @@
-import Zona1 from "./Zona1";
-import Zona2 from "./Zona2";
-import Zona3 from "./Zona3";
-import Zona4 from "./Zona4";
+import SeleccionarZona from "../accionesUsuario/SeleccionarZona";
 
-function ZonaSeleccionada() {
+function MultiZona() {
   return (
     <div>
-      <h1>
-        TODO aquí un SWITCH con la selección del usuario. de momento lo muestro
-        todo. Aquí maquetaré CON CSS
-      </h1>
-      <h2>PUERTO DEL CARMEN</h2>
-      <Zona1 />
-      <h2>PLAYA BLANCA</h2>
-      <Zona2 />
-      <h2>MALA</h2>
-      <Zona3 />
-      <h2>LA GRACIOSA</h2>
-      <Zona4 />
+      <h1>GUÍA DE INMERSIONES DE LANZAROTE</h1>
+      <h2>¿Donde quieres bucear?</h2>
+      <p>
+        Selecciona tu zona de buceo<br></br>(Puerto del Carmen, Playa Blanca,
+        Mala o La Graciosa)
+      </p>
+      <SeleccionarZona />
     </div>
   );
 }
 
-export default ZonaSeleccionada;
+export default MultiZona;

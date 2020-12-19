@@ -3,12 +3,12 @@
 import "./App.css";
 
 //Importo los componentes donde haré los fetch y mostraré los resultados en el navegador
-import ZonaSeleccionada from "./components/zonasDeBuceo/MultiZona";
+import MultiZona from "./components/zonasDeBuceo/MultiZona";
 
 function App() {
   return (
     <div>
-      <ZonaSeleccionada />
+      <MultiZona />
     </div>
   );
 }
