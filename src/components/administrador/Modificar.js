@@ -1,5 +1,8 @@
+//Modificar inmersión
+//import { useState, useEffect } from "react";
+
 function Modificar() {
-  return "fetch PUT";
+  return "Hola";
 }
 
 export default Modificar;

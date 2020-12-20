@@ -28,20 +28,19 @@ const Zona2 = () => {
       });
   }, []);
 
+  const ver = () => {
+    return "hacer esta función";
+  };
+
   //Ahora que tengo el array lo quiero sacar en pantalla y lo haría con un .map
 
   const mostrarZona2 = zona2.map(function (inmersion) {
     return (
-      <div key={inmersion.nombre}>
+      <div key={inmersion.nombre} className="resultados">
+        <img src={inmersion.imagen} alt={inmersion.nombre} height="250px" />
         <h2>{inmersion.nombre}</h2>
         <p>{inmersion.descripcion}</p>
-        <img src={inmersion.mapa} alt={inmersion.nombre} height="250px" />
-        <img src={inmersion.imagen} alt={inmersion.nombre} height="250px" />
-        <p>{inmersion.nivel}</p>
-        <p>{inmersion.profundidad}</p>
-        <p>{inmersion.entrada}</p>
-        <p>{inmersion.horario}</p>
-        <p>{inmersion.temperatura}</p>
+        <button onClick={ver}>Ver inmersión</button>
       </div>
     );
   });

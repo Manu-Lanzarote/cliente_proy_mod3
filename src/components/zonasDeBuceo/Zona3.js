@@ -12,18 +12,17 @@ const Zona3 = () => {
       });
   }, []);
 
+  const ver = () => {
+    return "hacer esta función";
+  };
+
   const mostrarZona3 = zona3.map(function (inmersion) {
     return (
-      <div key={inmersion.nombre}>
+      <div key={inmersion.nombre} className="resultados">
+        <img src={inmersion.imagen} alt={inmersion.nombre} height="250px" />
         <h2>{inmersion.nombre}</h2>
         <p>{inmersion.descripcion}</p>
-        <img src={inmersion.mapa} alt={inmersion.nombre} height="250px" />
-        <img src={inmersion.imagen} alt={inmersion.nombre} height="250px" />
-        <p>{inmersion.nivel}</p>
-        <p>{inmersion.profundidad}</p>
-        <p>{inmersion.entrada}</p>
-        <p>{inmersion.horario}</p>
-        <p>{inmersion.temperatura}</p>
+        <button onClick={ver}>Ver inmersión</button>
       </div>
     );
   });

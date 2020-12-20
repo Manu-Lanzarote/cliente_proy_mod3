@@ -1,21 +1,21 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Buceo CID Lanzarote",
+  "name": "Buceo CID Lanzarote - Canary Island Divers",
   "icons": [
     {
-      "src": "./favicones/favicon.ico",
-      "sizes": "96x96 32x32 16x16",
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "/imagenes/Logo Buceo CID Lanzarote 45.png",
+      "src": "logo192.png",
       "type": "image/png",
-      "sizes": "45x45"
+      "sizes": "192x192"
     },
     {
-      "src": "/imagenes/logo120x120-1.png",
+      "src": "logo512.png",
       "type": "image/png",
-      "sizes": "120x120"
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
