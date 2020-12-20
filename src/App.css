@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(./imagenes/fondo.jpeg);
+  background-image: url(./components/imagenes/fondo.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -90,7 +90,10 @@ h2 {
 }
 
 .seleccionarZona input,
-.seleccionarZona button {
+.seleccionarZona button,
+.formBorrar input,
+.formBorrar button,
+.boton {
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
@@ -98,7 +101,9 @@ h2 {
   font-size: 14px;
 }
 
-.seleccionarZona button {
+.seleccionarZona button,
+.formBorrar button,
+.boton {
   background-color: rgb(101, 159, 245);
   min-width: 120px;
 }
@@ -276,4 +281,94 @@ footer i {
   font-size: 25px;
   color: white;
   padding: 0 10px 30px 5px;
+}
+
+/* PANELES DE OPCIONES */
+.paneles {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  padding: 5px;
+  border: 1px solid rgba(3, 102, 250, 0.521);
+  border-radius: 5px;
+  margin-top: 30px;
+  text-align: center;
+  color: #0e426a;
+  background-color: rgba(3, 102, 250, 0.041);
+}
+
+.acciones {
+  text-align: center;
+  color: #0e426a;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.acciones:hover {
+  color: #187bc7;
+  cursor: pointer;
+}
+
+.contenedorImagen {
+  max-width: 100%;
+  margin-top: 30px;
+  background-image: url("https://cdn.redshift.autodesk.com/sites/7/2018/09/coral-reef-conservation_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 430px;
+}
+
+/* ESTILOS FORMULARIOS DEL PANEL DE CONTROL */
+
+.contenedor,
+.contenedor2 {
+  padding-bottom: 20px;
+  border: 1px solid rgba(3, 102, 250, 0.521);
+  border-radius: 5px;
+  margin: 30px 0;
+  color: #0e426a;
+  background-color: rgba(3, 102, 250, 0.041);
+}
+
+.contenedorUno {
+  display: flex;
+}
+
+.contenedor {
+  width: 100%;
+  padding: 0 100px 20px;
+}
+.contenedor h2,
+.contenedor2 h2 {
+  padding: 20px 0;
+  font-size: 22px;
+}
+
+.contenedor2 h2 {
+  padding-left: 40px;
+}
+
+.nuevoDato {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.nuevoDato input {
+  min-width: 400px;
+}
+
+.formBorrar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.red1 {
+  color: red;
+}
+.red2 {
+  background-color: rgba(255, 0, 0, 0.144);
+  border: 1px solid rgb(250, 165, 179);
 }

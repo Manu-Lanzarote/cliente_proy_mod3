@@ -14,9 +14,9 @@ const Footer = () => {
           Powered by Manu Lanzarote{" "}
         </p>
         <br />
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-youtube"></i>
+        <i className="fab fa-facebook"></i>
+        <i className="fab fa-instagram"></i>
+        <i className="fab fa-youtube"></i>
       </footer>
     </>
   );

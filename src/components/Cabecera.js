@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo120 from "../imagenes/logo120.png";
+import logo120 from "../components/imagenes/logo120.png";
 
 const Cabecera = () => {
   let [nombre, setNombre] = useState("");

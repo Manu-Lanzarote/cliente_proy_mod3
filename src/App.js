@@ -3,21 +3,25 @@
 import "./App.css";
 
 //Importo los componentes donde haré los fetch y mostraré los resultados en el navegador
-import MultiZona from "./components/zonasDeBuceo/MultiZona";
+//import MultiZona from "./components/zonasDeBuceo/MultiZona";
 
 //Importo los componentes Header y Footer
 import Cabecera from "./components/Cabecera";
 import Footer from "./components/Footer";
-import SelectUser from "./components/zonasDeBuceo/SelectUser";
+//import SelectUser from "./components/zonasDeBuceo/SelectUser";
+import PanelDeControl from "./components/administrador/PanelDeControl";
 
 function App() {
   return (
     <div>
       <div className="body">
         <Cabecera />
-        <div className="main">
+        {/* <div className="main">
           <MultiZona />
           <SelectUser />
+        </div> */}
+        <div className="main">
+          <PanelDeControl />
         </div>
         <Footer />
       </div>
