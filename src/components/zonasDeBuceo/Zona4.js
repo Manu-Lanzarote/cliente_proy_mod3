@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Zona4 = (props) => {
+const Zona4 = () => {
   const [zona4, setZona4] = useState([]);
 
   useEffect(() => {

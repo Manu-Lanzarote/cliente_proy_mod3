@@ -1,6 +1,9 @@
 import { useState } from "react";
 import logo120 from "../components/imagenes/logo120.png";
 
+//Para la ruta /control-panel del botón  ÁREA ADMIN
+import { Link } from "react-router-dom";
+
 const Cabecera = () => {
   let [nombre, setNombre] = useState("");
   let [contrasenya, setContrasenya] = useState("");
@@ -21,7 +24,9 @@ const Cabecera = () => {
 
   return (
     <div className="header">
-      <img src={logo120} alt="Logo CID" id="logoCabecera" />
+      <a href="http://localhost:3000" target="_self">
+        <img src={logo120} alt="Logo CID" id="logoCabecera" />
+      </a>
       <div className="usuario">
         <input
           type="text"
@@ -35,7 +40,9 @@ const Cabecera = () => {
           value={contrasenya}
           onChange={comprobarContrasenya}
         />
-        <button onClick={validar}>ÁREA ADMIN</button>
+        <Link to="/control-panel">
+          <button onClick={validar}>ÁREA ADMIN</button>
+        </Link>
       </div>
     </div>
   );

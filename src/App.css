@@ -20,6 +20,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 #logoCabecera {
@@ -61,7 +62,7 @@ h1 {
   padding: 5px;
   border: 1px solid rgba(3, 102, 250, 0.521);
   border-radius: 5px;
-  margin: 30px 0;
+  /* margin: 30px 0; */
   text-align: center;
   color: #0e426a;
   background-color: rgba(3, 102, 250, 0.041);
@@ -112,8 +113,10 @@ h2 {
   text-transform: uppercase;
 }
 
-#dory {
-  margin: 0 500px;
+#ola {
+  margin: 0 520px;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 /* CLASES DE ZONA1, ZONA2, ZONA3, ZONA4 */
@@ -160,7 +163,7 @@ h2 {
   -webkit-box-orient: vertical;
 }
 
-/* CLASES DE LA INMERSIÓN QUE SE MUESTRA EWN PANTALLA */
+/* CLASES DE LA INMERSIÓN QUE SE MUESTRA EN PANTALLA */
 .dive {
   margin-top: 30px;
 }
@@ -230,7 +233,7 @@ h2 {
   padding: 20px 5px;
 }
 i {
-  color: rgb(110, 162, 241);
+  color: #187bc7;
   padding: 0 5px;
 }
 .datos p {
@@ -250,12 +253,9 @@ i {
 
 /* FOOTER */
 footer {
-  margin-top: -100px;
   color: white;
   text-align: center;
   padding-top: 120px;
-  padding-bottom: 10px;
-  bottom: 0;
   width: 100%;
   background-image: url("./components/imagenes/footer2.png");
   background-position: center;
@@ -280,7 +280,7 @@ footer i {
   cursor: pointer;
   font-size: 25px;
   color: white;
-  padding: 0 10px 30px 5px;
+  padding: 0 10px 10px 5px;
 }
 
 /* PANELES DE OPCIONES */
@@ -348,6 +348,14 @@ footer i {
   padding-left: 40px;
 }
 
+.enlaces {
+  color: #187bc7;
+  text-decoration: none;
+}
+.enlaces:hover {
+  color: #0e426a;
+}
+
 .nuevoDato {
   display: flex;
   justify-content: space-between;
@@ -371,4 +379,57 @@ footer i {
 .red2 {
   background-color: rgba(255, 0, 0, 0.144);
   border: 1px solid rgb(250, 165, 179);
+}
+
+/* LANDING PAGE */
+.landing {
+  background-image: url("./components/imagenes/Rubicon.jpg");
+  height: 100vh;
+}
+
+.animated-shadow {
+  border: none;
+  padding: 200px 100px;
+  color: #ffffff;
+  font: normal 60px Varela Round, sans-serif;
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2;
+}
+/*Animación para rotar las sombras*/
+@keyframes move {
+  0% {
+    text-shadow: 5px -5px 0 rgba(3, 102, 250, 0.521),
+      4px -4px 0 rgba(3, 102, 250, 0.521), 2px -2px 0 rgba(3, 102, 250, 0.521),
+      2px -2px 0 rgba(3, 102, 250, 0.521), -4px 4px 0 #041977,
+      -4px 4px 0 #041977, -2px 2px 0 #041977, -1px 1px 0 #041977;
+  }
+  25% {
+    text-shadow: -6px -6px 0 #041977, -3px -3px 0 #041977, -2px -2px 0 #041977,
+      -1px -1px 0 #041977, 4px 4px 0 #041977, 3px 3px 0 #041977,
+      2px 2px 0 #041977, 1px 1px 0 #041977;
+  }
+  50% {
+    text-shadow: -6px 6px 0 rgba(3, 102, 250, 0.521),
+      -4px 4px 0 rgba(3, 102, 250, 0.521), -2px 2px 0 rgba(3, 102, 250, 0.521),
+      -2px 2px 0 rgba(3, 102, 250, 0.521), 4px -4px 0 #041977,
+      4px -4px 0 #041977, 2px -2px 0 #041977, 1px -1px 0 #041977;
+  }
+  75% {
+    text-shadow: 6px 6px 0 #041977, 3px 3px 0 #041977, 2px 2px 0 #041977,
+      2px 2px 0 #041977, -4px -4px 0 rgba(3, 102, 250, 0.521),
+      -4px -4px 0 rgba(3, 102, 250, 0.521), -2px -2px 0 rgba(3, 102, 250, 0.521),
+      -2px -2px 0 rgba(3, 102, 250, 0.521);
+  }
+  100% {
+    text-shadow: 6px -6px 0 rgba(51, 129, 247, 0.712),
+      4px -4px 0 rgba(51, 129, 247, 0.712), 2px -2px 0 rgba(51, 129, 247, 0.712),
+      2px -2px 0 rgba(51, 129, 247, 0.712), -4px 4px 0 #041977,
+      -4px 4px 0 #041977, -2px 2px 0 #041977, -1px 1px 0 #041977;
+  }
 }
