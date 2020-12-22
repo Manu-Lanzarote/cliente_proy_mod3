@@ -55,23 +55,25 @@ const SeleccionarZona = () => {
   //Y lo paso por parámetros al componente Zona  -- No olvidar importar Zona
 
   return (
-    <div className="seleccionarZona">
-      <div className="seleccion">
-        <input
-          type="text"
-          value={zona}
-          onChange={escribirZona}
-          placeholder="Zona de buceo"
-        />
-        <button onClick={verInmersiones} placeholder="Zona de buceo">
-          Nueva zona
-        </button>
-        <h2 id="eleccion">{zona}</h2>
+    <>
+      <div className="seleccionarZona">
+        <div className="seleccion">
+          <input
+            type="text"
+            value={zona}
+            onChange={escribirZona}
+            placeholder="Zona de buceo"
+          />
+          <button onClick={verInmersiones} placeholder="Zona de buceo">
+            Nueva zona
+          </button>
+          <h2>{zona.toUpperCase()}</h2>
+        </div>
       </div>
       <div className="grid">
         <Zona zonaUser={usuario.zonaUser} />
       </div>
-    </div>
+    </>
   );
 };
 

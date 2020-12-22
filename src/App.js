@@ -11,13 +11,11 @@ import MultiZona from "./components/zonasDeBuceo/MultiZona";
 //Importo los componentes Header y Footer
 import Cabecera from "./components/Cabecera";
 import Footer from "./components/Footer";
-import SelectUser from "./components/zonasDeBuceo/SelectUser";
 import PanelDeControl from "./components/administrador/PanelDeControl";
-import SelectUserDinamico from "./components/zonasDeBuceo/SelectUserDinamico";
+// import SelectUserDinamico from "./components/zonasDeBuceo/SelectUserDinamico";
 
 function App() {
   return (
-    //<BrowserRouter></BrowserRouter> Será com el div que envuelve todas mis rutas y mis componentes
     <BrowserRouter>
       <div className="body">
         <Route exact path="/">
@@ -38,8 +36,6 @@ function App() {
           <Cabecera />
           <div className="main">
             <MultiZona />
-            <SelectUser />
-            <SelectUserDinamico />
           </div>
           <Footer />
         </Route>
