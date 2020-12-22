@@ -13,6 +13,7 @@ import Cabecera from "./components/Cabecera";
 import Footer from "./components/Footer";
 import SelectUser from "./components/zonasDeBuceo/SelectUser";
 import PanelDeControl from "./components/administrador/PanelDeControl";
+import SelectUserDinamico from "./components/zonasDeBuceo/SelectUserDinamico";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <div className="main">
             <MultiZona />
             <SelectUser />
+            <SelectUserDinamico />
           </div>
           <Footer />
         </Route>

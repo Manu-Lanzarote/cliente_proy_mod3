@@ -11,8 +11,8 @@ const SelectUser = () => {
           />
         </div>
         <div className="contenido">
-          <h2 id="miNombre">Blue Hole</h2>
-          <p id="miDescripcion">
+          <h2>Blue Hole</h2>
+          <p>
             Las dos caras del Blue Hole nos abren las puertas a un rincón de
             Playa Chica que nos enamora irremediablemente.
             <br />
@@ -35,27 +35,27 @@ const SelectUser = () => {
         <div className="datos">
           <div>
             <i className="fas fa-star"></i>
-            <p id="miLugar">Pto. del Carmen</p>
+            <p>Pto. del Carmen</p>
           </div>
           <div>
             <i className="fas fa-user"></i>
-            <p id="miNivel">PADI AOWD</p>
+            <p>PADI AOWD</p>
           </div>
           <div>
             <i className="fas fa-sort-amount-down"></i>
-            <p id="miProfundidad">30 mts.</p>
+            <p>30 mts.</p>
           </div>
           <div>
             <i className="fas fa-flag"></i>
-            <p id="miEntrada">Costa / Shore</p>
+            <p>Costa / Shore</p>
           </div>
           <div>
             <i className="fas fa-history"></i>
-            <p id="miHorario">09:00 / 22:00</p>
+            <p>09:00 / 22:00</p>
           </div>
           <div>
             <i className="fas fa-certificate"></i>
-            <p id="miTemperatura">17º / 24º</p>
+            <p>17º / 24º</p>
           </div>
         </div>
         <div className="mapa" id="miMapa">
