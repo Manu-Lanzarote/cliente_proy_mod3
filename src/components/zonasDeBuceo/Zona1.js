@@ -40,18 +40,23 @@ const Zona1 = () => {
 
   if (boolean) {
     return (
-      <div>
-        <SelectUserDinamico
-          nombre={zona1[num].nombre}
-          descripcion={zona1[num].descripcion}
-          mapa={zona1[num].mapa}
-          imagen={zona1[num].imagen}
-          nivel={zona1[num].nivel}
-          profundidad={zona1[num].profundidad}
-          entrada={zona1[num].entrada}
-          horario={zona1[num].horario}
-          temperatura={zona1[num].temperatura}
-        />
+      <div className="mostrarZona">
+        <div className="grid">
+          <Zona1 />
+        </div>
+        <div>
+          <SelectUserDinamico
+            nombre={zona1[num].nombre}
+            descripcion={zona1[num].descripcion}
+            mapa={zona1[num].mapa}
+            imagen={zona1[num].imagen}
+            nivel={zona1[num].nivel}
+            profundidad={zona1[num].profundidad}
+            entrada={zona1[num].entrada}
+            horario={zona1[num].horario}
+            temperatura={zona1[num].temperatura}
+          />
+        </div>
       </div>
     );
   } else {

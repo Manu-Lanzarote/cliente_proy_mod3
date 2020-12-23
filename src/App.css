@@ -165,13 +165,12 @@ h2 {
 
 /* CLASES DE LA INMERSIÓN QUE SE MUESTRA EN PANTALLA */
 .dive {
-  max-width: 94%;
   margin-top: 30px;
+  max-width: 100%;
 }
 
 .zonas,
-.dive,
-.separador {
+.dive {
   border: 2px solid rgba(3, 102, 250, 0.219);
   padding: 20px;
   margin-bottom: 0 auto 30px;
@@ -251,6 +250,13 @@ i {
   width: 100%;
   height: 100%;
   box-shadow: 7px 7px 5px 0px rgba(26, 25, 25, 0.75);
+}
+
+/* Clases del bloque mostrar zonas + zonas */
+.mostrarZona {
+  display: flex;
+  flex-direction: column;
+  width: 93.5%;
 }
 
 /* FOOTER */
